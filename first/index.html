@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>메리의 이야기</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Pretendard",sans-serif;
+    background:#FFF8F0;
+    color:#444;
+    line-height:1.7;
+}
+
+h1,h2,h3{
+    font-family:"Gowun Dodum",sans-serif;
+}
+
+section{
+    padding:90px 20px;
+}
+
+.container{
+    width:1100px;
+    max-width:92%;
+    margin:auto;
+}
+
+/* ---------------- Hero ---------------- */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(255,248,240,.75),rgba(255,248,240,.75)),
+    url("https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+.hero h1{
+
+    font-size:4rem;
+    color:#8B5E3C;
+    margin-bottom:20px;
+}
+
+.hero p{
+
+    font-size:1.3rem;
+    margin-bottom:35px;
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:#C89B5A;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.3s;
+}
+
+.btn:hover{
+
+    background:#AE8449;
+}
+
+/* ------------ 소개 ------------ */
+
+.intro{
+
+    background:white;
+}
+
+.intro-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+}
+
+.photo{
+
+    height:420px;
+
+    border-radius:20px;
+
+    background:#F6E5C6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:90px;
+}
+
+/* ----------- 카드 ---------- */
+
+.cards{
+
+    background:#FFF5E7;
+}
+
+.card-wrap{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+    margin-top:45px;
+}
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#8B5E3C;
+}
+
+/* CTA */
+
+.cta{
+
+    text-align:center;
+
+    background:#C89B5A;
+
+    color:white;
+}
+
+.cta h2{
+
+    margin-bottom:20px;
+
+    font-size:2.2rem;
+}
+
+.cta .btn{
+
+    background:white;
+
+    color:#8B5E3C;
+
+    font-weight:bold;
+}
+
+/* footer */
+
+footer{
+
+    padding:40px;
+
+    background:#6F5238;
+
+    color:white;
+
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:2.6rem;
+
+}
+
+.intro-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>메리의 이야기</h1>
+
+<p>
+14년째, 가장 따뜻한 미소로 우리를 기다리는 메리
+</p>
+
+<a href="#intro" class="btn">
+메리 만나러 가기 🐾
+</a>
+
+</div>
+
+</section>
+
+<!-- 소개 -->
+
+<section id="intro" class="intro">
+
+<div class="container">
+
+<div class="intro-grid">
+
+<div>
+
+<h2>안녕하세요, 저는 메리예요.</h2>
+
+<br>
+
+<p>
+
+14살 골든 리트리버 메리.
+
+언제나 웃는 얼굴로 가족을 기다리고,
+
+사람을 누구보다 좋아하는 천사 같은 아이입니다.
+
+</p>
+
+<br>
+
+<p>
+
+나이가 들어도 산책을 사랑하고,
+
+매일 새로운 하루를 기대하며 살아갑니다.
+
+</p>
+
+</div>
+
+<div class="photo">
+
+🐶
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- 강점 카드 -->
+
+<section class="cards">
+
+<div class="container">
+
+<h2 style="text-align:center;">
+메리의 매력
+</h2>
+
+<div class="card-wrap">
+
+<div class="card">
+
+<h3>🤍 애교쟁이</h3>
+
+<p>
+
+사람을 만나면 가장 먼저
+쓰다듬어 달라고 다가오는 사랑스러운 아이.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🍖 간식 러버</h3>
+
+<p>
+
+맛있는 음식이라면
+언제나 반짝이는 눈빛으로 기다립니다.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎾 놀기 좋아해요</h3>
+
+<p>
+
+14살이 되었지만
+아직도 놀아 달라고 조르는 순수한 마음.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚶 산책이 행복해</h3>
+
+<p>
+
+오늘도 신나게 걸으며
+하루를 가장 행복하게 보내는 메리.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+
+오늘도 메리와 함께 추억을 만들고 있습니다.
+
+</h2>
+
+<p>
+
+평범한 하루가 가장 소중한 추억이 됩니다.
+
+</p>
+
+<br>
+
+<a href="#" class="btn">
+
+📷 추억 앨범 보기
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Mary's Story · Made with ❤️ for Mary
+
+</p>
+
+</footer>
+
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+
+link.addEventListener("click",function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
