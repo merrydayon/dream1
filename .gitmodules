@@ -1,0 +1,3 @@
+[submodule "ai-onboarding"]
+	path = ai-onboarding
+	url = https://github.com/mulcamp-ed/ai-onboarding.git
